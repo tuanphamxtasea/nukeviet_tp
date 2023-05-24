@@ -725,13 +725,13 @@ if (($module_config[$module_name]['elas_use'] == 1) and $checkss == NV_CHECK_SES
             $catid_i = $catid;
         }
 
-        $check_permission_edit = $check_permission_delete = false;
+        $check_permission_pdf = $check_permission_edit = $check_permission_delete = false;
 
         if (defined('NV_IS_ADMIN_MODULE')) {
-            $check_permission_edit = $check_permission_delete = true;
+            $check_permission_pdf = $check_permission_edit = $check_permission_delete = true;
         } else {
             $array_temp = explode(',', $listcatid);
-            $check_edit = $check_del = 0;
+            $check_pdf = $check_edit = $check_del = 0;
 
             foreach ($array_temp as $catid_i) {
                 if (isset($array_cat_admin[$admin_id][$catid_i])) {
@@ -785,6 +785,10 @@ if (($module_config[$module_name]['elas_use'] == 1) and $checkss == NV_CHECK_SES
         if ($check_permission_delete) {
             $admin_funcs['delete'] = nv_link_delete_page($id);
             $_permission_action['delete'] = true;
+        }
+        if ($check_permission_pdf) {
+            $admin_funcs['pdf'] = nv_link_pdf_page($id);
+            $_permission_action['pdf'] = true;
         }
 
         $data[$id] = [

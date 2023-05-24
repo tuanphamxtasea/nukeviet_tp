@@ -82,7 +82,8 @@ $allow_func = [
     'alias_tag',
     'topicajax',
     'sourceajax',
-    'tagsajax'
+    'tagsajax',
+    'pdf_content'
 ];
 
 if (!isset($site_mods['cms'])) {

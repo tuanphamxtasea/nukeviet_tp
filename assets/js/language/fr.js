@@ -13,6 +13,7 @@ var nv_aryDayName = "Dimanche Lundi Mardi Mercredi Jeudi Vendredi Samedi".split(
     nv_aryMS = "Jan Fév Mar Avr Mai Jun Jul Aout Sep Oct Nov Dec".split(" "),
     nv_admlogout_confirm = ["Êtes-vous sûr de vouloir quitter l'Administration?", "Toutes les informations de votre session ont été supprimées. Vous avez quitté l'Administration"],
     nv_is_del_confirm = ["Êtes-vous sûr de vouloir supprimer? Si vous acceptez, toutes les données seront supprimées, il est impossible de les restauter.", "Suppression réussie", "Suppression échouée"],
+    nv_is_pdf_confirm=["Delete pdf faile for some unknown reason"],
     nv_is_change_act_confirm = ["Êtes-vous sûr de vouloir 'changer'?", " 'Changement' réussi", " 'Changement' échoué"],
     nv_is_empty_confirm = ["Êtes-vous sûr de vouloir 'vider'?", " 'vider' avec succès", " 'vider' échoué pour une raison inconnue"],
     nv_is_recreate_confirm = ["Êtes-vous sûr de vouloir 'ré-installer'?", " 'Ré-installation' réussie", "'Ré-installation' échouée pour une raison inconnue"],

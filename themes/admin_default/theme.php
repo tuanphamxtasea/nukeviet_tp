@@ -426,3 +426,29 @@ function nv_admin_theme($contents, $head_site = 1)
 
     return $sitecontent;
 }
+
+
+/**
+ * nv_pdf_news_detail()
+ *
+ * @param string  $basePath
+ * @param string  $page_title
+ * @param string  $description
+ * @param string  $body_html
+ * @return string
+ */
+function nv_pdf_news_detail($basePath, $page_title, $description, $body_html)
+{
+    global  $module_file, $admin_info;
+    $dir_template = NV_ROOTDIR . '/themes/' . $admin_info['admin_theme'] . '/modules/' . $module_file ;
+    $xtpl = new XTemplate('pdf.tpl', $dir_template);
+    $xtpl->assign('BASE_PATH', $basePath);
+    $xtpl->assign('ADMIN_THEME', $admin_info['admin_theme']);
+    $xtpl->assign('PAGE_TITLE', $page_title);
+    $xtpl->assign('DESCRIPTION', $description);
+    $xtpl->assign('BODY_HTML', $body_html);
+
+    $xtpl->parse('pdf');
+    $sitecontent = $xtpl->text('pdf');
+    return $sitecontent;
+}

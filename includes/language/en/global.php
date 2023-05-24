@@ -182,6 +182,7 @@ $lang_global['reviews'] = 'Reviews';
 $lang_global['add'] = 'Add';
 $lang_global['edit'] = 'Edit';
 $lang_global['delete'] = 'Delete';
+$lang_global['pdf'] = 'Pdf';
 $lang_global['disable'] = 'Disable';
 $lang_global['activate'] = 'Activate';
 $lang_global['check'] = 'Check';

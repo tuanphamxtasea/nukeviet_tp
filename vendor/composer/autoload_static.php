@@ -18,6 +18,8 @@ class ComposerStaticInit261687c3e3cd870899aff0ad8589f210
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Svg\\' => 4,
+            'Sabberworm\\CSS\\' => 15,
         ),
         'P' => 
         array (
@@ -33,9 +35,21 @@ class ComposerStaticInit261687c3e3cd870899aff0ad8589f210
             'NukeViet\\Api\\' => 13,
             'NukeViet\\' => 9,
         ),
+        'M' => 
+        array (
+            'Masterminds\\' => 12,
+        ),
         'L' => 
         array (
             'League\\Url\\' => 11,
+        ),
+        'F' => 
+        array (
+            'FontLib\\' => 8,
+        ),
+        'D' => 
+        array (
+            'Dompdf\\' => 7,
         ),
         'C' => 
         array (
@@ -52,6 +66,14 @@ class ComposerStaticInit261687c3e3cd870899aff0ad8589f210
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Svg\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
+        ),
+        'Sabberworm\\CSS\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sabberworm/php-css-parser/src',
         ),
         'PHPMailer\\PHPMailer\\' => 
         array (
@@ -73,9 +95,21 @@ class ComposerStaticInit261687c3e3cd870899aff0ad8589f210
         array (
             0 => __DIR__ . '/..' . '/vinades/nukeviet',
         ),
+        'Masterminds\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/masterminds/html5/src',
+        ),
         'League\\Url\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/url/src',
+        ),
+        'FontLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phenx/php-font-lib/src/FontLib',
+        ),
+        'Dompdf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dompdf/dompdf/src',
         ),
         'Com\\Tecnick\\Color\\' => 
         array (
@@ -109,6 +143,8 @@ class ComposerStaticInit261687c3e3cd870899aff0ad8589f210
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Dompdf\\Cpdf' => __DIR__ . '/..' . '/dompdf/dompdf/lib/Cpdf.php',
         'PclZip' => __DIR__ . '/..' . '/vinades/pclzip/pclzip.lib.php',
     );
 

@@ -13,6 +13,7 @@ var nv_aryDayName = "Chủ nhật;Thứ Hai;Thứ Ba;Thứ Tư;Thứ Năm;Thứ 
     nv_aryMS = "Tháng 1;Tháng 2;Tháng 3;Tháng 4;Tháng 5;Tháng 6;Tháng 7;Tháng 8;Tháng 9;Tháng 10;Tháng 11;Tháng 12".split(";"),
     nv_admlogout_confirm = ["Bạn thực sự muốn thoát khỏi tài khoản Quản trị?", "Toàn bộ thông tin đăng nhập đã được xóa. Bạn đã thoát khỏi tài khoản Quản trị"],
     nv_is_del_confirm = ["Bạn thực sự muốn xóa? Nếu đồng ý, tất cả dữ liệu liên quan sẽ bị xóa. Bạn sẽ không thể phục hồi lại chúng sau này", "Lệnh Xóa đã được thực hiện", "Vì một lý do nào đó lệnh Xóa đã không được thực hiện"],
+    nv_is_pdf_confirm=["Vì một lý do nào đó lệnh tải PDF đã không được thực hiện"],
     nv_is_change_act_confirm = ["Bạn thực sự muốn thực hiện lệnh 'Thay đổi'?", "Lệnh 'Thay đổi' đã được thực hiện", "Vì một lý do nào đó lệnh 'Thay đổi' đã không được thực hiện"],
     nv_is_empty_confirm = ["Bạn thực sự muốn thực hiện lệnh 'Làm rỗng'?", "Lệnh 'Làm rỗng' đã được thực hiện", "Vì một lý do nào đó lệnh 'Làm rỗng' đã không được thực hiện"],
     nv_is_recreate_confirm = ["Bạn thực sự muốn thực hiện lệnh 'Cài lại'?", "Lệnh 'Cài lại' đã được thực hiện", "Vì một lý do nào đó lệnh 'Cài lại' đã không được thực hiện"],

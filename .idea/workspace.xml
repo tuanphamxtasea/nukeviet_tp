@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b5aa538-8cd9-4fe5-8d37-a165046c89fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/themes/admin_default/modules/news/pdf.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/language/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/language/en.js" afterDir="false" />

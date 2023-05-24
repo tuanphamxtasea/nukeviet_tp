@@ -13,6 +13,7 @@ var nv_aryDayName = "Sunday Monday Tuesday Wednesday Thursday Friday Saturday".s
     nv_aryMS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" "),
     nv_admlogout_confirm = ["Are you sure to logout from administrator account?", "The entire login information has been deleted. You have been logout Administrator account successfully"],
     nv_is_del_confirm = ["Are you sure to delete? If you accept,all data will be deleted. You could not restore them", "Delete succesfully", "Delete data faile for some unknown reason"],
+    nv_is_pdf_confirm=["Download data fail for some unknown reason"],
     nv_is_change_act_confirm = ["Are you sure to 'change'?", "Be 'Change' successfully", " 'Change' fail"],
     nv_is_empty_confirm = ["Are you sure to  be 'empty'?", "Be 'empty' succesful", "Be 'empty' fail for some unknown reason"],
     nv_is_recreate_confirm = ["Are you sure to 'repair'?", "Be 'Repair' succesfully", "'Repair' fail for some unknown reason"],

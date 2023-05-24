@@ -277,6 +277,13 @@ function nv_del_content(id, checkss, base_adminurl, detail) {
     return false;
 }
 
+function nv_pdf_content(id, checkss, base_adminurl, detail) {
+    $.post(script_name + '?' + nv_lang_variable + '=' + nv_lang_data + '&' + nv_name_variable + '=' + nv_module_name + '&' + nv_fc_variable + '=pdf_content&nocache=' + new Date().getTime(), 'id=' + id + '&checkss=' + checkss, function(res) {
+        nv_pdf_content_result(res);
+    });
+    return false;
+}
+
 function nv_check_movecat(oForm, msgnocheck) {
     var fa = oForm['catidnews'];
     if (fa.value == 0) {
@@ -293,6 +300,25 @@ function nv_del_content_result(res) {
         alert(r_split[1]);
     } else {
         alert(nv_is_del_confirm[2]);
+    }
+    return false;
+}
+
+function nv_pdf_content_result(res) {
+    var r_split = res.split('&');
+    if (r_split[0] == 'OK') {
+        const decodedData = atob(r_split[1]);
+        const uint8Array = new Uint8Array(decodedData.length);
+        for (let i = 0; i < decodedData.length; i++) {
+            uint8Array[i] = decodedData.charCodeAt(i);
+        }
+        const blob = new Blob([uint8Array], { type: 'application/pdf' });
+        const url = URL.createObjectURL(blob);
+        window.open(url);
+    } else if (r_split[0] == 'ERR') {
+        alert(r_split[1]);
+    } else {
+        alert(nv_is_pdf_confirm[0]);
     }
     return false;
 }

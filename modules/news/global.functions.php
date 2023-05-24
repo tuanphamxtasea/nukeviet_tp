@@ -244,6 +244,20 @@ function nv_link_delete_page($id, $detail = 0)
 }
 
 /**
+ * nv_link_download_pdf_page()
+ *
+ * @param int $id
+ * @return string
+ */
+function nv_link_pdf_page($id, $detail = 0)
+{
+    global $lang_global, $module_name;
+    $link = '<a class="btn btn-primary btn-xs" href="javascript:void(0);" onclick="nv_pdf_content(' . $id . ", '" . md5($id . NV_CHECK_SESSION) . "','" . NV_BASE_ADMINURL . "', " . $detail . ')"><em class="fa fa-download margin-right"></em> ' . $lang_global['pdf'] . '</a>';
+
+    return $link;
+}
+
+/**
  * nv_get_firstimage()
  *
  * @param string $contents

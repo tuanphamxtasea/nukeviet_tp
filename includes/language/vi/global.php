@@ -192,6 +192,7 @@ $lang_global['reviews'] = 'Đánh giá';
 $lang_global['add'] = 'Thêm';
 $lang_global['edit'] = 'Sửa';
 $lang_global['delete'] = 'Xóa';
+$lang_global['pdf'] = 'Pdf';
 $lang_global['disable'] = 'Đình chỉ';
 $lang_global['activate'] = 'Kích hoạt';
 $lang_global['check'] = 'Kiểm tra';

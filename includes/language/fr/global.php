@@ -112,6 +112,7 @@ $lang_global['site_rss'] = 'RSS - Derniers News';
 $lang_global['copyright'] = '&copy; Copyright %s. Tous droits réservés.';
 $lang_global['phonenumber'] = 'Téléphone';
 $lang_global['address'] = 'Adresse';
+$lang_global['pdf'] = 'Pdf';
 $lang_global['full_name'] = 'Nom complet';
 $lang_global['first_name'] = 'Nom';
 $lang_global['last_name'] = 'Prénom';
